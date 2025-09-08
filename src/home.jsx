@@ -16,6 +16,12 @@ import tiredImg from "./assets/tired_img.png";
 import neutralImg from "./assets/neutral_img.png";
 import hypeImg from "./assets/hype_img.png";
 
+const TITLE = import.meta.env.VITE_TITLE || "Anime Companion";
+const DESC =
+  import.meta.env.VITE_DESC ||
+  "A gentle app to reflect your mood with soothing anime vibes";
+const X_LINK = import.meta.env.VITE_X_LINK || "https://x.com/new";
+
 const EMOTIONS = [
   { id: "chill", emoji: "😊", label: "Chill" },
   { id: "sad", emoji: "😢", label: "Sad" },
@@ -109,10 +115,10 @@ export function App() {
         className="x-icon"
         src={x}
         alt="Close"
-        onClick={() => window.open("https://x.com/aura_bot_sense", "_blank")}
+        onClick={() => window.open(X_LINK, "_blank")}
       />
-      <h1>Aura Bot </h1>
-      <p>A gentle app to reflect your mood with soothing anime vibes.</p>
+      <h1>{TITLE}</h1>
+      <p>{DESC}</p>
 
       <div className="emotions-container">
         {EMOTIONS.map((e) => (
