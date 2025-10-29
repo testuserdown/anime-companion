@@ -1,5 +1,5 @@
 window.__ENV = {
-    SITE_TITLE: "Soul Bot",
-    X_HANDLE: "https://x.com/AI_soulbot",
+    SITE_TITLE: "Mood Companion",
+    X_HANDLE: "https://x.com/moodcompanionAI",
     SITE_DESC: "A gentle app to reflect your mood with soothing anime vibes"
 };
